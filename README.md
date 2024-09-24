@@ -1,6 +1,6 @@
 Mennggunakan browser (Google Chrome)
 Login shopee
-terus ke link ini https://shopee.com.my/user/purchase/
+terus ke link ini https://shopee.com.my/user/purchase/ atau di My Purchase dan di ALL
 
 Right Click dan pilih Inspect
 Pilih tab console dan paste code calculator dan Enter.
