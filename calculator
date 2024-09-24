@@ -1,7 +1,7 @@
 function scrollToBottom() {
     return new Promise((resolve) => {
         let totalHeight = 0;
-        let distance = 100; // Scroll by 100px at a time
+        let distance = 100;
 
         let timer = setInterval(() => {
             let scrollHeight = document.body.scrollHeight;
