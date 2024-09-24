@@ -1,0 +1,23 @@
+function scrollToBottom() {
+    return new Promise((resolve) => {
+        let totalHeight = 0;
+        let distance = 100; // Scroll by 100px at a time
+
+        let timer = setInterval(() => {
+            let scrollHeight = document.body.scrollHeight;
+            window.scrollBy(0, distance);
+            totalHeight += distance;
+
+            if (totalHeight >= scrollHeight) {
+                clearInterval(timer);
+                resolve();
+            }
+        }, 100);
+    });
+}
+
+scrollToBottom().then(() => {
+    console.log('All orders should be loaded now!');
+    
+    calculateFromPage();
+});
